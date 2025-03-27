@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha Sua Magia Inicial</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #f5f5dc;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: #333333;
+            border: 2px solid #654321;
+            border-radius: 10px;
+            width: 300px;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #b0b0b0;
+        }
+        .selected {
+            border: 4px solid #ffcc00;
+            box-shadow: 0 0 15px #ffcc00;
+        }
+        #escolha {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ffcc00;
+        }
+        /* Estilo do botão Próxima Página */
+        .proxima-pagina {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #f5f5dc;
+            background-color: #654321;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .proxima-pagina:hover {
+            background-color: #8B4513;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha Sua Magia</h1>
+    <div class="container" id="magias-container">
+        <!-- Card Metais -->
+        <div class="card" data-magia="Metais">
+            <img src="metais.jpg" alt="Metais">
+            <h2>Metais</h2>
+            <p>- Gera o elemento a partir da mana local<br>- Gera Golens a partir da mana local</p>
+        </div>
+        <!-- Card Terra -->
+        <div class="card" data-magia="Terra">
+            <img src="terra.jpg" alt="Terra">
+            <h2>Terra</h2>
+            <p>- Gera o elemento a partir da mana local<br>- Gera Golens a partir da mana local</p>
+        </div>
+        <!-- Card Fogo -->
+        <div class="card" data-magia="Fogo">
+            <img src="fogo.jpg" alt="Fogo">
+            <h2>Fogo</h2>
+            <p>- Gera o elemento a partir da mana local<br>- Gera Golens a partir da mana local</p>
+        </div>
+        <!-- Card Água -->
+        <div class="card" data-magia="Água">
+            <img src="agua.jpg" alt="Água">
+            <h2>Água</h2>
+            <p>- Gera o elemento a partir da mana local<br>- Gera Golens a partir da mana local</p>
+        </div>
+        <!-- Card Ar -->
+        <div class="card" data-magia="Ar">
+            <img src="ar.jpg" alt="Ar">
+            <h2>Ar</h2>
+            <p>- Gera o elemento a partir da mana local<br>- Gera Golens a partir da mana local</p>
+        </div>
+        <!-- Card Eletricidade -->
+        <div class="card" data-magia="Eletricidade">
+            <img src="eletricidade.jpg" alt="Eletricidade">
+            <h2>Eletricidade</h2>
+            <p>- Gera o elemento a partir da mana local<br>- Gera Golens a partir da mana local</p>
+        </div>
+        <!-- Card Gelo -->
+        <div class="card" data-magia="Gelo">
+            <img src="gelo.jpg" alt="Gelo">
+            <h2>Gelo</h2>
+            <p>- Gera o elemento a partir da mana local<br>- Gera Golens a partir da mana local</p>
+        </div>
+        <!-- Card Psiquica -->
+        <div class="card" data-magia="Psiquica">
+            <img src="psiquica.jpg" alt="Psíquica">
+            <h2>Psíquica</h2>
+            <p>- Lê mentes<br>- Move objetos com a mente<br>- Vê segundos no futuro</p>
+        </div>
+        <!-- Card Corporal -->
+        <div class="card" data-magia="Corporal">
+            <img src="corporal.jpg" alt="Corporal">
+            <h2>Corporal</h2>
+            <p>- Imbui o corpo com mana, aumentando a resistência<br>- Atrofia músculos do inimigo<br>- Eleva os sentidos do usuário<br>- Aumenta força sua e dos aliados</p>
+        </div>
+        <!-- Card Desintoxicação -->
+        <div class="card" data-magia="Desintoxicação">
+            <img src="desintoxicacao.jpg" alt="Desintoxicação">
+            <h2>Desintoxicação</h2>
+            <p>- Cura ferimentos em área<br>- Regenera partes do corpo<br>- Anula venenos ou poções<br>- Retira maldições</p>
+        </div>
+        <!-- Card Sonhos -->
+        <div class="card" data-magia="Sonhos">
+            <img src="sonhos.jpg" alt="Sonhos">
+            <h2>Sonhos</h2>
+            <p>- Adormece o alvo<br>- Manipula sonhos<br>- Cria ilusões</p>
+        </div>
+        <!-- Card Espaço -->
+        <div class="card" data-magia="Espaço">
+            <img src="espaco.jpg" alt="Espaço">
+            <h2>Espaço</h2>
+            <p>- Se teletransporta para áreas marcadas (imóvel enquanto marca)<br>- Cria uma área no espaço para armazenar itens<br>- Teletransporta matéria de um local para o espaço</p>
+        </div>
+        <!-- Card Sombras -->
+        <div class="card" data-magia="Sombras">
+            <img src="sombras.jpg" alt="Sombras">
+            <h2>Sombras</h2>
+            <p>- Cria sombras<br>- Ataca oponentes acertando sua sombra<br>- Se esconde na sombra de algo ou alguém<br>- Se locomove pelas sombras</p>
+        </div>
+        <!-- Card Intoxicação -->
+        <div class="card" data-magia="Intoxicação">
+            <img src="intoxicacao.jpg" alt="Intoxicação">
+            <h2>Intoxicação</h2>
+            <p>- Jatos ou poços de veneno<br>- Envenena por toque<br>- Amaldiçoa</p>
+        </div>
+        <!-- Card Necromancia -->
+        <div class="card" data-magia="Necromancia">
+            <img src="necromancia.jpg" alt="Necromancia">
+            <h2>Necromancia</h2>
+            <p>- Recruta a alma dos mortos<br>- Compartilha habilidades e atributos com seus mortovivos<br>- Reencarna<br>- Troca de lugar com um dos lacaios</p>
+        </div>
+    </div>
+    <div id="escolha">Você ainda não escolheu uma magia.</div>
+
+    <!-- Botão Próxima Página -->
+    <a href="https://carlos06dev.github.io/rpg/" class="proxima-pagina">Próxima Página</a>
+
+    <script>
+        // Variável para armazenar a escolha do usuário
+        let escolha = null;
+
+        // Função para lidar com o clique em um card
+        function selecionarMagia(event) {
+            const cardClicado = event.target.closest('.card'); // Encontra o card clicado
+            if (!cardClicado) return; // Sai se o clique não foi em um card
+
+            const magia = cardClicado.getAttribute('data-magia'); // Obtém o nome da magia do atributo data-magia
+
+            // Remove a classe "selected" de todos os cards
+            document.querySelectorAll('.card').forEach(card => card.classList.remove('selected'));
+
+            // Adiciona a classe "selected" ao card clicado
+            cardClicado.classList.add('selected');
+
+            // Atualiza a escolha
+            escolha = magia;
+
+            localStorage.setItem('magia', magia);
+
+            // Exibe a escolha no elemento #escolha
+            document.getElementById('escolha').textContent = `Você escolheu: ${escolha}`;
+
+            // Aqui você pode fazer algo com a escolha, como enviá-la para um servidor ou usá-la em outra parte do código
+            console.log(`Magia escolhida: ${escolha}`);
+        }
+
+        // Adiciona o evento de clique ao container de magias
+        document.getElementById('magias-container').addEventListener('click', selecionarMagia);
+    </script>
+</body>
+</html>

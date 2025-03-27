@@ -1,0 +1,47 @@
+Metais, Terra, Fogo, Água, Ar, Eletricidade, Gelo
+- Gera o elemento a partir da mana local
+- Gera Golens a partir da mana local
+
+Psiquica
+- Le mentes
+- Move objetos com a mentes
+- Ve segundos no futuro
+
+Corporal
+- Imbui o corpo com mana, aumentando a resistencia
+- Atrofia musculos do inimigo
+- Eleva os sentidos do usuario
+- Aumentar força sua e dos aliados
+
+Desintoxicação
+- Cura ferimentos em área
+- Regenerar partes do corpo
+- Anular venenos ou poções
+- Retirar maldições
+
+Sonhos
+- Adormecer o alvo
+- Manipular Sonhos
+- Criar ilusões
+
+Espaço
+- Se teletransportar para áreas marcadas. (Imóvel enquanto marca)
+- Criar uma área no espaço para armazenar itens
+- Teletransporta matéria de um local para o espaço
+
+Sombras
+- Criar Sombras
+- Atacar oponentes acertando sua Sombra
+- Se esconder na sombra de algo ou alguem
+- Se locomover pelas Sombras
+
+Intoxicação
+- Jatos ou poços de veneno
+- Envenenar por toque
+- Amaldiçoar
+
+Necromancia
+- Recrutar a alma dos mortos
+- Compartilha suas habilidades e atributos com seus mortovivos
+- Reencarnar
+- Troca de lugar com um dos lacaios
